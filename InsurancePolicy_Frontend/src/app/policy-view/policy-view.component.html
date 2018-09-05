@@ -1,0 +1,21 @@
+<h3>Policy Query</h3>
+<div>
+  QuerybyAadhaar:
+      <input [(ngModel)]="policy.Aadhaar" type="text" id="aadhar">
+      <br/><br/><br/>
+ 
+      <button (click)="QuerybyAadhaar(aadhar.value)">SEARCH</button>
+    </div>
+    <div>
+        QuerybyAadhaar:
+        <input [(ngModel)]="policy.name" type="text" id="name">
+        <br/><br/><br/>
+        <button (click)="QuerybyName(name.value)">SEARCH</button>
+    </div>
+    <div>
+        QuerybyCompany:
+        <input [(ngModel)]="policy.InsuranceCompany" type="text" id="inscomp">
+        <br/><br/><br/>
+        <button (click)="QuerybyName(inscomp.value)">SEARCH</button>
+    </div>
+      

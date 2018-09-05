@@ -1,0 +1,56 @@
+
+  <h2>Create Policy</h2>
+  <div>
+    <label>Aadhaar:
+    <input [(ngModel)]="policy.Aadhaar" type="text" id="aadhar">
+    <br/><br/><br/>
+  </label>
+</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="policy.name"  type="text" id="name">
+      <br/><br/><br/>
+    </label>
+  </div>
+  <div>
+    <label>Age:
+        <input [(ngModel)]="policy.Age"  type="text" id="age">
+        <br/><br/><br/>
+    </label>
+  </div>
+  <div>
+    <label>InsuranceType:
+        <input [(ngModel)]="policy.InsuranceType"  type="text" id="type" >
+        <br/><br/><br/>
+    </label>   
+  </div>
+  <div><label>InsuranceCompany: 
+     <input type="radio" ng-model="myVar" value="SBI" id="inscomp">SBI
+     <input type="radio" ng-model="myVar" value="LIC" id="inscomp">LIC 
+     <br/><br/><br/>
+  </label>
+</div>
+  <div><label>Salary: 
+      <input [(ngModel)]="policy.Salary" type="text" id="salary">
+      <br/><br/><br/>
+  </label>
+  </div>
+
+  <div><label>SumInsured: 
+      <input [(ngModel)]="policy.SumInsured"   type="text" id="suminsured">
+      <br/><br/><br/>
+  </label>
+  </div>
+  <div><label>PolicyPrice: 
+      <input [(ngModel)]="policy.PolicyPrice"  type="text" id="policyprice">
+      <br/><br/><br/>
+  </label>
+  </div>
+  <div>
+    <br/><br/><br/>
+   
+    <button (click)="CreatePolicy">SUBMIT</button>
+
+   
+  </div>
+

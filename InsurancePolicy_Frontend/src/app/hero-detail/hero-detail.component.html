@@ -1,0 +1,44 @@
+<div *ngIf="hero">
+  <h2>{{hero.name | uppercase}} Details</h2>
+  <div><span>Aadhaar: </span>{{hero.Aadhaar}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="hero.name" placeholder="name"/>
+    </label>
+  </div>
+  <div>
+      <label>Age:
+          <input [(ngModel)]="policy.Age"  type="text" id="age">
+          <br/><br/><br/>
+      </label>
+    </div>
+    <div>
+      <label>InsuranceType:
+          <input [(ngModel)]="policy.InsuranceType"  type="text" id="type" >
+          <br/><br/><br/>
+      </label>   
+    </div>
+    <div><label>InsuranceCompany: 
+       <input type="radio" ng-model="myVar" value="SBI" id="instype">SBI
+       <input type="radio" ng-model="myVar" value="LIC" id="instype">LIC 
+       <br/><br/><br/>
+    </label>
+  </div>
+    <div><label>Salary: 
+        <input [(ngModel)]="policy.Salary" type="text" id="salary">
+        <br/><br/><br/>
+    </label>
+    </div>
+  
+    <div><label>SumInsured: 
+        <input [(ngModel)]="policy.SumInsured"   type="text" id="suminsured">
+        <br/><br/><br/>
+    </label>
+    </div>
+    <div><label>PolicyPrice: 
+        <input [(ngModel)]="policy.PolicyPrice"  type="text" id="policyprice">
+        <br/><br/><br/>
+    </label>
+    </div>
+  <button (click)="goBack()">go back</button>
+</div>
